@@ -16,6 +16,7 @@ jobs:
         run: |
           sudo apt install mkisofs
           file /boot/vmlinuz
+          ls /boot/vmlinuz*
       - name: "build kit"
         id: kit_live
         run: sudo bash ./build
