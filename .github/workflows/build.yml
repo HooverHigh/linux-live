@@ -15,7 +15,7 @@ jobs:
       - name: install deps
         run: |
           sudo apt install mkisofs
-          file /casper/vmlinuz
+          file /boot/vmlinuz
       - name: "build kit"
         id: kit_live
         run: sudo bash ./build
